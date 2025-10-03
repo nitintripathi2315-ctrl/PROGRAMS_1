@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    int num,square,lastdigit,temp,multiplier=1;
+    printf("Enter num:");
+    scanf("%d", &num);
+    square = num * num;
+    temp=num;
+    while (temp>0)
+    {
+        multiplier*=10;
+        temp/=10;
+    }
+    lastdigit=square % multiplier;
+    if (lastdigit==num)
+    {
+        printf("This automorphic number %d:", num);
+    }
+    else {
+        printf("This isn't automorphic number %d:", num);
+    }
+    return 0;}
