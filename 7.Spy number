@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int num,sum=0,product=1,digit;
+    printf("Enter num:");
+    scanf("%d", &num);
+    int temp=num;
+    while (temp>0)
+    {
+        digit = temp % 10;
+        sum+=digit;
+        product*=digit;
+        temp/=10;
+    }
+    if (sum==product)
+    {
+        printf("This is spy number : %d", num);
+    }
+    else{
+        printf("This isn't spy number %d", num);
+    }
+    return 0;
+}
