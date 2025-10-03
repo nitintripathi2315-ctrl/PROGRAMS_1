@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter num:");
+    scanf("%d", &num);
+    if (num%9==1)
+    {
+        printf("This is magic number: %d", num);
+    }
+    else{
+        printf("This isn't magic number: %d", num);
+    }
+    return 0;
+}
