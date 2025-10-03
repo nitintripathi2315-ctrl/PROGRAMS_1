@@ -1,0 +1,27 @@
+1. Write a program to check if a given number is
+ Armstrong number or not
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int n,sum=0,temp,r;
+    int count=0;
+    printf("Enter n:");
+    scanf("%d", &n);
+    temp=n;
+    while(temp>0){
+        temp/=10;
+        count++;}
+        temp=n;
+    while(temp>0){
+        r=temp%10;
+        sum+=(int)pow(r,count);
+        temp/=10;
+    }
+    if (sum==n)
+    {
+        printf("This is armstrong number: %d",n);
+    }
+    else
+    printf("This is not armstrong number");
+    return 0;
+    }
